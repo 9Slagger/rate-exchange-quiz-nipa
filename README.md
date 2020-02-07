@@ -6,10 +6,23 @@ how to start project
 
 call api exchange with curl   
 ```
-$ curl --header "Content-Type: application/json" --request POST --data '{"fromShortName": "USD", "toShortName": "THB", "amount": 10}' http://localhost:8080/exchange
+$ curl --location --request POST 'localhost:8080/exchange' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"fromShortName": "USD",
+	"toShortName": "THB",
+	"amount": 10
+}'
+$ curl --location --request POST 'localhost:8080/exchange' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"fromShortName": "EUR",
+	"toShortName": "JPY",
+	"amount": 10
+}'
 ```
 
 call api get currencies with curl   
 ```
-$ curl  --request GET http://localhost:8080/currencies
+$ curl --location --request GET 'localhost:8080/currencies'
 ```
