@@ -13,6 +13,12 @@ module.exports = {
         rateExchange.data.results[`${fromShortName}_${toShortName}`].val;
       reslut = amount * rateExchange
       res.status(200).json({ reslut, message: "exchange success" });
-    } catch (error) {}
+    } catch (error) {
+      console.log(
+        "❌ log for pm2, error function exchange at exchangeControllers",
+        error
+      );
+      res.status(400).json({ message: "something went wrong" });
+    }
   }
 };
