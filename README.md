@@ -10,17 +10,17 @@ $ cd rate-exchange-quiz-nipa/backend
 $ npm install "OR" yarn
 ```
 ```
-$  npm start "OR" yarn start
+$ npm start "OR" yarn start
 ```
 new tab terminal   
 ```
-cd rate-exchange-quiz-nipa/frontend
+$ cd rate-exchange-quiz-nipa/frontend
 ```
 ```
-npm install "OR" yarn
+$ npm install "OR" yarn
 ```
 ```
-npm start "OR" yarn start
+$ npm start "OR" yarn start
 ```
 open browser http://localhost:8080
   
